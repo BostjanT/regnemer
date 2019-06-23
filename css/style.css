@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=latin-ext');
+
+/* GENERAL SETTINGS */
+:root {
+    --mainBlue: #b1ede8;
+    --mainWhite: #ffffff;
+    --mainCharcoal: #2c4251;
+    --mainOrange: #ed6a5a;
+
+}
+
+body {
+    font-family: 'Open Sans', cursive;
+    color: var(--mainCharcoal);
+    height: 100%;
+}
+/*#####  NAVBAR  #####*/
+.navbar {
+    background:var(--mainWhite);
+    padding: 20px 20px;
+    transition: all 1s ease;
+}
+
+.navbar-background {
+    padding: 5px 10px;
+}
+
+.navbar-brand {
+    height: 60px;
+    width: auto;
+}
+
+.logo {
+    height: 70px;
+}
+
+.nav-link {
+    color: var(--mainOrange) !important;
+    text-decoration: none;
+    transition: all 1.2s ease;
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    color: var(--mainCharcoal) !important;
+}
+
+.toggler-btn {
+    border: 2px solid var(--mainOrange);
+    padding: 5px;
+    transition: all 1.3s ease;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: var(--mainOrange);
+    transition: all 0.5s ease;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    transform: rotate(45deg) translate(-5px, -8px);
+}
+
+.section-left {
+    padding-left: 20rem;
+}
+
+.section-title-underline {
+    height: .2rem;
+    width: 5rem;
+    background: var(--mainOrange);
+    margin: 0 auto;
+}
+
+.section-title-text {
+    letter-spacing: .1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    
+}
+
+/*#####  HEADER  #####*/
+.header {
+    position: relative;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:767px) {
+    .header {
+        background: url('../img/bcgImage.jpg')center/cover fixed no-repeat;
+        height: 60vh;
+    }
+}
+
+.banner {
+    text-align: center;
+    z-index: 3;
+}
+
+
+@media screen and (max-width: 767px) {
+    
+    .banner-logo {
+        display: none;
+    }
+   
+}
+
+.show-late {
+    display: none;
+}
+
+
+
+.hello {
+    font-size: 5rem;
+}
+
+.welcome {
+    font-size: 3rem;
+    
+}
+
+.banner-logo {
+    height: 8rem;
+    opacity: .6;
+    padding-top: 1rem;
+}
+
+/* video */
+.video-container {
+    /*clip-path: polygon(50% 0%, 100% 0, 100% 95%, 50% 100%, 0% 95%, 0 0);*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+}
+
+.video-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* video switch */
+.video-switch-container {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+
+   .video-switch {
+       display: none;
+   }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .video-switch-container {
+        display: block;
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        z-index: 3;
+    }
+
+    .video-switch {
+        position: relative;
+        width: 5rem;
+        background:var(--mainBlue);
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.25rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+    }
+
+    .video-switch-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 50%;
+        background: var(--mainOrange);
+        border-radius: 0.5rem;
+        transition: all 0.3s ease-out;
+    }
+
+    .btn-toggle {
+        left: 50%;
+    }
+}
+
+/*#####  ABOUT  #####*/
+.cap {
+    height: 150px;
+    width: 100%
+}
+
+.hint {
+    min-height: 35vh;;
+    background: var(--mainBlue);
+}
+
+
+
+/*#####  CONTACT  #####*/
+.text-info {
+    color: var(--mainOrange) !important;
+}
+
+.btn-info {
+    background: var(--mainOrange) !important;
+    border: none;
+}
+
+
+/*#####  FOOTER  #####*/
+.footer {
+    background: #2c4251;
+    color: var(--mainWhite)
+}
+
+.email {
+    color: var(--mainWhite);
+}
+
+.email:hover {
+    text-decoration: none;
+    color: var(--mainOrange);
+}
+
+#back-to-top {
+    background: #ed6a5a;
+    border-radius: 5px;
+    display: inline-block;
+    
+}
+
+.scrollTop {
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+}
