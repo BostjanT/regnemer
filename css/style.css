@@ -28,6 +28,8 @@ body {
 .navbar-brand {
     height: 60px;
     width: auto;
+    padding-left: 1rem;
+   
 }
 
 .logo {
@@ -99,9 +101,27 @@ body {
 
 @media screen and (max-width:767px) {
     .header {
-        background: url('../img/bcgImage.jpg')center/cover fixed no-repeat;
-        height: 60vh;
+        background:linear-gradient(rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.6)) ,
+        url('../img/bcgImage.jpg')center/cover fixed no-repeat;
+        max-height: calc(60vh - 50px);
+        justify-content: center;       
     }
+
+    .hello {
+        display: none;
+    }
+    
+    .welcome {
+        font-size: .7rem;
+        margin-top: 6rem;
+    }
+    .banner-logo {
+        height: 4rem;
+        opacity: .9;
+        padding-top: .3rem;
+    }
+   
 }
 
 .banner {
@@ -109,20 +129,9 @@ body {
     z-index: 3;
 }
 
-
-@media screen and (max-width: 767px) {
-    
-    .banner-logo {
-        display: none;
-    }
-   
-}
-
 .show-late {
     display: none;
 }
-
-
 
 .hello {
     font-size: 5rem;
@@ -134,8 +143,8 @@ body {
 }
 
 .banner-logo {
-    height: 8rem;
-    opacity: .6;
+    height: 14rem;
+    opacity: .9;
     padding-top: 1rem;
 }
 
@@ -231,6 +240,10 @@ body {
     border: none;
 }
 
+.contact {
+    min-height: 25vh;
+}
+
 
 /*#####  FOOTER  #####*/
 .footer {
@@ -245,6 +258,10 @@ body {
 .email:hover {
     text-decoration: none;
     color: var(--mainOrange);
+}
+
+.logo-footer {
+    height: 10rem;
 }
 
 #back-to-top {
