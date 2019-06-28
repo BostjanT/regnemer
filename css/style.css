@@ -263,6 +263,7 @@ body {
     background: #ed6a5a;
     border-radius: 5px;
     display: inline-block;
+    z-index: 3;
     
 }
 
