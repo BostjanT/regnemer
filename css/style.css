@@ -239,6 +239,32 @@ body {
     min-height: 25vh;
 }
 
+.btn-show {
+    border: 2px solid var(--mainOrange);
+}
+
+.stik {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding-left: 2rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    border-bottom: 1px solid var(--mainOrange)
+}
+
+.pozicija {
+    margin: 0 3rem;
+}
+
+.phone {
+    margin-left:  0rem;
+    margin-right: 10px;
+}
+
+.card-body {
+    border: none;
+}
+
 
 /*#####  FOOTER  #####*/
 .footer {
