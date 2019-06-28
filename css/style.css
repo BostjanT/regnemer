@@ -104,24 +104,19 @@ body {
         background:linear-gradient(rgba(255, 255, 255, 0.6),
         rgba(255, 255, 255, 0.6)) ,
         url('../img/bcgImage.jpg')center/cover fixed no-repeat;
-        max-height: calc(60vh - 50px);
-        justify-content: center;       
+        justify-content: center;  
+        height: 50vh;     
     }
 
-    .hello {
+    .hello, .banner-logo {
         display: none;
     }
     
     .welcome {
-        font-size: .7rem;
-        margin-top: 6rem;
+        justify-content: center;
+        margin-top:2rem;
     }
-    .banner-logo {
-        height: 4rem;
-        opacity: .9;
-        padding-top: .3rem;
-    }
-   
+ 
 }
 
 .banner {
