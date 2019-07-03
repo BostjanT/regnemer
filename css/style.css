@@ -226,6 +226,10 @@ body {
 
 
 /*#####  CONTACT  #####*/
+.width-40 {
+    min-width: 40vw;
+}
+
 .text-info {
     color: var(--mainOrange) !important;
 }
@@ -240,7 +244,11 @@ body {
 }
 
 .btn-show {
-    border: 2px solid var(--mainOrange);
+    border: 2px solid var(--mainOrange) !important;
+}
+
+.btn-show:focus {
+    outline: none;
 }
 
 .stik {
@@ -253,17 +261,20 @@ body {
 }
 
 .pozicija {
-    margin: 0 3rem;
+    text-align: center;   
 }
 
-.phone {
-    margin-left:  0rem;
-    margin-right: 10px;
-}
 
 .card-body {
     border: none;
 }
+
+@media screen and (max-width: 550px) {
+    #collapseExample .me, .phone {
+        display: none;
+    }
+}
+
 
 
 /*#####  FOOTER  #####*/
