@@ -241,10 +241,11 @@ body {
 
 .btn-show {
     border: 2px solid var(--mainOrange) !important;
+    outline: 0;
 }
 
 .btn-show:focus {
-    outline: none;
+    outline: 0 !important;
 }
 
 .stik {
@@ -266,6 +267,7 @@ body {
 
 .me {
     margin: 0 auto;
+    
 }
 
 .envelope .fa {
@@ -283,7 +285,7 @@ body {
     padding-bottom: 1rem;
 }
 
-.phone .lead{
+.lead{
     background-color: var(--mainOrange);
     padding-left:.5rem;
     border-radius: 10px;
