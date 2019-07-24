@@ -91,9 +91,14 @@ $(document).ready(function() {
     });
 
     $(document).ready(function () {
-        setInterval(() => {
-             $('.show-late').css('display', 'block');
-        }, 4000);
+        if(screen.width > 767) {
+            setInterval(() => {
+                $('.show-late').css('display', 'block');
+            }, 4000);
+        } else {
+            $('.show-late').css('display', 'block');
+        }
+        
        
         
     });
