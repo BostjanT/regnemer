@@ -233,6 +233,10 @@ body {
     min-width: 40vw;
 }
 
+.map {
+    min-height: 40vh;
+}
+
 .text-info {
     color: var(--mainOrange) !important;
 }
