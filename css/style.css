@@ -105,7 +105,7 @@ body {
     .header {
         background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('../img/bcgImage.jpg')center/cover fixed no-repeat;
         justify-content: center;
-        max-height: 50vh;
+        min-height: 50vh;
     }
     .hello, .banner-logo {
         display: none;
@@ -117,6 +117,7 @@ body {
         top: 30%;
         transform: none;
         text-align: center;
+        font-size: 1rem;
         /* justify-content: center;
         margin-top: 2rem; */
     }
